@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'Universidad.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME':  'Universidad.db'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'afiliado',
+        'USER': 'rails2',
+        'PASSWORD': 'rails2',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
